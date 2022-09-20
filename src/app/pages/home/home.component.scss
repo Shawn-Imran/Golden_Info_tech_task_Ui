@@ -1,0 +1,44 @@
+.main_div{
+
+  .null{
+   height: 89px;
+  }
+
+  .sec1{
+    display: grid;
+    grid-template-columns: 22% 30% 48%;
+    height: 596px;
+
+    .section1_middle{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+
+      .subsecm1{
+        .subHeader{
+          font-size: 36px;
+          font-weight: 600;
+          color: #000000;
+          font-family: Montserrat;
+          margin-bottom: 25px;
+        }
+
+        .subDesc{
+          font-size: 18px;
+          font-weight: 400;
+          color: #000000;
+          font-family: Montserrat;
+          margin-bottom: 25px;
+        }
+
+        .subdownload{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,169 @@
+.main_navbar{
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+
+    display: grid;
+    grid-template-columns: 24% 50% 26%;
+
+    .logo_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo{
+            width: 109px;
+            height: 50px;
+        }
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+          ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            li{
+                list-style: none;
+                position: relative;
+                margin-right: 5px;
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 14px;
+                    font-weight: 400;
+                    padding: 0 10px 0 10px;
+                    font-family: Roboto;
+                    &:hover{
+                        color:#2CAEE2;
+                    }
+                }
+                mat-icon{
+                    font-size: 13px;
+                    height: 13px;
+                    width: 13px;
+                    color: #000;
+                    bottom: 0%;
+                    position: absolute;
+                    &:hover{
+                        color: #2CAEE2;
+                    }
+                }
+            }
+          }
+    }
+
+    .login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // position: relative;
+        margin-top: 14px;
+        margin-bottom: 14px;
+
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            li{
+                list-style: none;
+                margin-right: 5px;
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 14px;
+                    font-weight: 400;
+                    padding: 0 10px 0 10px;
+                    font-family: Roboto;
+                    position: relative;
+                    &:hover{
+                        color:#2CAEE2;
+                    }
+
+                    img{
+                        width: 18px;
+                        height: 18px;
+                        position: absolute;
+                        left: -38%;
+                        bottom: 0%;
+                    }
+
+                    mat-icon{
+                        font-size: 13px;
+                        height: 13px;
+                        width: 13px;
+                        color: #000;
+                        bottom: -9%;
+                        position: absolute;
+                        &:hover{
+                            color: #2CAEE2;
+                        }
+                    }
+                }
+            }
+
+            .login_btn{
+                background-color: #2CAEE2;
+                color: #fff;
+                width: 100px;
+                height: 32px;
+                border: none;
+                border-radius: 20px;
+                padding: 5px 10px 5px 10px;
+                margin-left: 20px;
+                font-size: 14px;
+                font-weight: 400;
+                font-family: Roboto;
+                &:hover{
+                    background-color: #2CAEE2;
+                    color: #fff;
+                }
+            }
+        }
+
+      //   p{
+      //     img{
+      //       width: 18px;
+      //       height: 18px;
+      //       bottom: 45%;
+      //       left: 8%;
+      //       position: absolute;
+      //       margin-bottom: 0px !important;
+      //   }
+      //   mat-icon{
+      //     font-size: 13px;
+      //     height: 13px;
+      //     width: 13px;
+      //     color: #000;
+      //     position: absolute;
+      //     bottom: 42%;
+      //     &:hover{
+      //         color: #2CAEE2;
+      //     }
+      //   }
+      // }
+
+      //   .login_btn{
+      //       background-color: #2CAEE2;
+      //       color: #fff;
+      //       font-size: 14px;
+      //       font-weight: 400;
+      //       padding: 10px 20px 10px 20px;
+      //       margin-left: 20px;
+      //       border: none;
+      //       border-radius: 5px;
+      //       font-family: Roboto;
+      //       &:hover{
+      //           background-color: #2CAEE2;
+      //           color: #fff;
+      //       }
+      //   }
+    }
+}
