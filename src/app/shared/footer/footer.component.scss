@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+.footer_main{
+  background-image: url(../../../assets/images/footer.png);
+  background-repeat: no-repeat;
+  background-position: right; 
+
+  .margin{
+    margin-left: 100px;
+
+  .hr{
+    margin-right: 100px;
+    hr{
+      width: 100%;
+      border: 1px solid #D7D7D7;
+      margin-bottom: 40px;
+      margin-right: 100px;
+
+      &:hover{
+        border: 1px solid #2CAEE2;
+      }
+    }
+  }
+
+
+  .sec1{
+    display: grid;
+    grid-template-columns: 1.12fr .97fr 0.97fr 0.97fr;
+
+    .sec1_part1{
+      p{
+        font-size: 14px;
+        color: #000000;
+        font-weight: 400;
+        margin-bottom: 10px;
+        font-family: Montserrat;
+        padding-right: 30px;
+      }
+    }
+
+    .sec_part2{
+      .flex{
+        display: flex;
+        align-items: center;
+
+        img{
+          height: 25px;
+          width: 25px;
+        }
+        p{
+          margin-bottom: 0px;
+        }
+      }
+    }
+
+  }
+
+
+  .sec2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    .sec1_part1{
+      display: grid;
+      grid-template-columns: 1.2fr .9fr;
+      align-items: center;
+
+      .sub_part1{
+
+        .header{
+          font-size: 18px;
+          color: #000000;
+          font-weight: 600;
+          margin-bottom: 10px;
+          font-family: Montserrat;
+        }
+
+        .contactImage{
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+
+          .loc{
+            height: 18px;
+            width: 14px;
+          }
+          .phone{
+            height: 15px;
+            width: 15px;
+          }
+          .mail{
+            height: 12px;
+            width: 15px;
+          }
+          .web{
+            height: 16px;
+            width: 16px;
+          }
+
+          p{
+            margin-bottom: 0px;
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .sub_part2{
+        .header{
+          font-size: 18px;
+          color: #000000;
+          font-weight: 600;
+          margin-bottom: 10px;
+          font-family: Montserrat;
+        }
+
+        .social{
+          img{
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+
+    .sec2_part2{
+        display: flex;
+        align-items: center;
+
+        img{
+         margin-right: 30px;
+        }
+        p{
+          margin-bottom: 0px;
+          margin-left: 30px;
+          margin-right: 30px;
+        }
+
+    }
+
+  }
+
+
+
+
+
+
+
+  }
+
+
+
+
+  .copy{
+    text-align: center;
+    color: #2CAEE2;
+    padding-bottom: 10px;
+  }
+}
