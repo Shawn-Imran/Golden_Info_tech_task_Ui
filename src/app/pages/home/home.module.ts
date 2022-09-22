@@ -3,15 +3,17 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
+import { SwiperModule } from 'swiper/angular';
 
 
 @NgModule({
-  declarations: [
-    HomeComponent
-  ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    SwiperModule
+  ],
+  declarations: [
+    HomeComponent
   ]
 })
 export class HomeModule { }
