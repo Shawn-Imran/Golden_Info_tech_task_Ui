@@ -249,17 +249,16 @@
     <div class="carousel">
 
       <swiper
-      [thumbs]="{ swiper: thumbsSwiper }"
       [navigation]="true"
       class="mySwiper"
     >
-      <ng-template swiperSlide>
+      <ng-template swiperSlide *ngFor="let comment of comments">
 
 
         <div class="aboutdetails">
 
           <div class="aboutimage">
-            <img src="assets/images/image1.png" alt="" />
+            <img [src]="comment.images" alt="" />
           </div>
 
           <div class="aboutdesc">
@@ -267,92 +266,12 @@
               <img src="/assets/images/cot1.png" alt="" />
             </div>
             <div class="disc">
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy text
-                ever since the 1500s, when an unknown printer took a galley of type
-                and scrambled it to make a type specimen book. when an unknown
-                printer took a galley of type and scrambled.
-              </p>
+              <p>{{comment.comments}}</p>
             </div>
             <div class="container">
               <div class="container1">
-                <p class="name">Foisal Morshed</p>
-                <p class="details">Student, CSE, University of Royal</p>
-              </div>
-
-              <div class="container2">
-                <img src="/assets/images/cot2.png" alt="" />
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-      </ng-template>
-      <ng-template swiperSlide>
-
-
-        <div class="aboutdetails">
-
-          <div class="aboutimage">
-            <img src="assets/images/image1.png" alt="" />
-          </div>
-
-          <div class="aboutdesc">
-            <div class="col1">
-              <img src="/assets/images/cot1.png" alt="" />
-            </div>
-            <div class="disc">
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy text
-                ever since the 1500s, when an unknown printer took a galley of type
-                and scrambled it to make a type specimen book. when an unknown
-                printer took a galley of type and scrambled.
-              </p>
-            </div>
-            <div class="container">
-              <div class="container1">
-                <p class="name">Foisal Morshed</p>
-                <p class="details">Student, CSE, University of Royal</p>
-              </div>
-
-              <div class="container2">
-                <img src="/assets/images/cot2.png" alt="" />
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-      </ng-template>
-      <ng-template swiperSlide>
-
-
-        <div class="aboutdetails">
-
-          <div class="aboutimage">
-            <img src="assets/images/image1.png" alt="" />
-          </div>
-
-          <div class="aboutdesc">
-            <div class="col1">
-              <img src="/assets/images/cot1.png" alt="" />
-            </div>
-            <div class="disc">
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy text
-                ever since the 1500s, when an unknown printer took a galley of type
-                and scrambled it to make a type specimen book. when an unknown
-                printer took a galley of type and scrambled.
-              </p>
-            </div>
-            <div class="container">
-              <div class="container1">
-                <p class="name">Foisal Morshed</p>
-                <p class="details">Student, CSE, University of Royal</p>
+                <p class="name">{{comment.name}}</p>
+                <p class="details">{{comment.depertment}}</p>
               </div>
 
               <div class="container2">
@@ -402,146 +321,25 @@
     [navigation]="true"
     class="mySwiper"
   >
-    <ng-template swiperSlide>
+
+    <ng-template swiperSlide *ngFor="let item of news">
       <div class="productCard">
         <div class="productImage">
-          <img src="/assets/images/card1.png" alt="" />
+          <img [src]="item.images"  alt="" />
         </div>
         <div class="productDetails">
-          <p class="date">November 5, 2021</p>
-          <p class="productName">Lorem Ipsum</p>
-          <p class="productDesc">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard
-          </p>
+          <p class="date">{{item.date}}</p>
+          <p class="productName">{{item.title}}</p>
+          <p class="productDesc">{{item.description}}</p>
 
           <div class="name_button">
-            <p class="name">Dr. Saifur Rahman</p>
+            <p class="name">{{item.name}}</p>
             <button class="readbtn">Read More</button>
           </div>
         </div>
       </div>
     </ng-template>
-    <ng-template swiperSlide>
-      <div class="productCard">
-        <div class="productImage">
-          <img src="/assets/images/card1.png" alt="" />
-        </div>
-        <div class="productDetails">
-          <p class="date">November 5, 2021</p>
-          <p class="productName">Lorem Ipsum</p>
-          <p class="productDesc">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard
-          </p>
 
-          <div class="name_button">
-            <p class="name">Dr. Saifur Rahman</p>
-            <button class="readbtn">Read More</button>
-          </div>
-        </div>
-      </div>
-    </ng-template>
-    <ng-template swiperSlide>
-      <div class="productCard">
-        <div class="productImage">
-          <img src="/assets/images/card1.png" alt="" />
-        </div>
-        <div class="productDetails">
-          <p class="date">November 5, 2021</p>
-          <p class="productName">Lorem Ipsum</p>
-          <p class="productDesc">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard
-          </p>
-
-          <div class="name_button">
-            <p class="name">Dr. Saifur Rahman</p>
-            <button class="readbtn">Read More</button>
-          </div>
-        </div>
-      </div>
-    </ng-template>
-    <ng-template swiperSlide>
-      <div class="productCard">
-        <div class="productImage">
-          <img src="/assets/images/card1.png" alt="" />
-        </div>
-        <div class="productDetails">
-          <p class="date">November 5, 2021</p>
-          <p class="productName">Lorem Ipsum</p>
-          <p class="productDesc">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard
-          </p>
-
-          <div class="name_button">
-            <p class="name">Dr. Saifur Rahman</p>
-            <button class="readbtn">Read More</button>
-          </div>
-        </div>
-      </div>
-    </ng-template>
-    <ng-template swiperSlide>
-      <div class="productCard">
-        <div class="productImage">
-          <img src="/assets/images/card1.png" alt="" />
-        </div>
-        <div class="productDetails">
-          <p class="date">November 5, 2021</p>
-          <p class="productName">Lorem Ipsum</p>
-          <p class="productDesc">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard
-          </p>
-
-          <div class="name_button">
-            <p class="name">Dr. Saifur Rahman</p>
-            <button class="readbtn">Read More</button>
-          </div>
-        </div>
-      </div>
-    </ng-template>
-    <ng-template swiperSlide>
-      <div class="productCard">
-        <div class="productImage">
-          <img src="/assets/images/card1.png" alt="" />
-        </div>
-        <div class="productDetails">
-          <p class="date">November 5, 2021</p>
-          <p class="productName">Lorem Ipsum</p>
-          <p class="productDesc">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard
-          </p>
-
-          <div class="name_button">
-            <p class="name">Dr. Saifur Rahman</p>
-            <button class="readbtn">Read More</button>
-          </div>
-        </div>
-      </div>
-    </ng-template>
-    <ng-template swiperSlide>
-      <div class="productCard">
-        <div class="productImage">
-          <img src="/assets/images/card1.png" alt="" />
-        </div>
-        <div class="productDetails">
-          <p class="date">November 5, 2021</p>
-          <p class="productName">Lorem Ipsum</p>
-          <p class="productDesc">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard
-          </p>
-
-          <div class="name_button">
-            <p class="name">Dr. Saifur Rahman</p>
-            <button class="readbtn">Read More</button>
-          </div>
-        </div>
-      </div>
-    </ng-template>
 
 
   </swiper>
