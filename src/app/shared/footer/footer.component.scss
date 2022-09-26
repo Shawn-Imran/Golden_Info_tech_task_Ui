@@ -3,7 +3,7 @@
 .footer_main{
   background-image: url(../../../assets/images/footer.png);
   background-repeat: no-repeat;
-  background-position: right; 
+  background-position: right;
 
   .margin{
     margin-left: 100px;
@@ -52,6 +52,8 @@
         }
       }
     }
+
+
 
   }
 
@@ -138,16 +140,31 @@
 
     }
 
+
+    @media (max-width:920px) {
+      .sec2_part2{
+        display:grid;
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  @media (max-width:920px) {
+    .sec2{
+      display:grid;
+      grid-template-columns: 65% 35%;
+    }
   }
 
 
 
-
-
-
-
   }
 
+  @media (max-width: 670px) {
+    .margin{
+      margin-left: 10px;
+    }
+  }
 
 
 
@@ -157,3 +174,5 @@
     padding-bottom: 10px;
   }
 }
+
+

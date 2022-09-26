@@ -1,5 +1,5 @@
 <div class="main_div">
-  <div class="null"></div>
+  <!-- <div class="null"></div> -->
 
   <div class="sec1">
     <div class="section1_left">
@@ -315,10 +315,26 @@
 
 
       <swiper
-    [slidesPerView]="4"
-    [spaceBetween]="20"
-    [freeMode]="true"
-    [navigation]="true"
+      [freeMode]="true"
+      [navigation]="true"
+      [breakpoints]="{
+      '240': {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      '558': {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      '1000': {
+        slidesPerView: 3,
+        spaceBetween: 25
+      },
+      '1284': {
+        slidesPerView: 4,
+        spaceBetween: 30
+      }
+    }"
     class="mySwiper"
   >
 
